@@ -27,6 +27,12 @@ ${prompt}`
 );
 
 const data = await response.json();
+  
+  console.log(data);
+
+if(data.error){
+throw new Error(data.error.message);
+}
 
 return data.candidates[0].content.parts[0].text;
 
