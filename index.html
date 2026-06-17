@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Voice Over AI v1</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<h1>🎙 Voice Over AI</h1>
+<p>Buat Voice Over Otomatis Dengan Gemini AI</p>
+</header>
+
+<section class="card">
+
+<label>Ide Cerita</label>
+
+<textarea
+id="idea"
+placeholder="Contoh: Cerita tentang black hole yang bisa menelan galaksi..."
+></textarea>
+
+<button id="generateBtn">
+✨ Generate Script
+</button>
+
+</section>
+
+<section class="card">
+
+<label>Script Voice Over</label>
+
+<textarea id="script"></textarea>
+
+<div class="button-group">
+
+<button id="speakBtn">
+🔊 Play Voice
+</button>
+
+<button id="copyBtn">
+📋 Copy
+</button>
+
+<button id="saveBtn">
+💾 Save
+</button>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<label>Kecepatan Suara</label>
+
+<input
+type="range"
+id="rate"
+min="0.5"
+max="2"
+step="0.1"
+value="1">
+
+</section>
+
+<section class="card">
+
+<h2>Riwayat</h2>
+
+<div id="history"></div>
+
+</section>
+
+</div>
+
+<script src="js/gemini.js"></script>
+<script src="js/voice.js"></script>
+<script src="js/history.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
