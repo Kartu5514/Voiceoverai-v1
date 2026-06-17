@@ -24,18 +24,6 @@ result;
 }
 );
 
-document
-.getElementById("speakBtn")
-.addEventListener(
-"click",
-()=>{
-
-speakText(
-script.value
-);
-
-}
-);
 
 document
 .getElementById("copyBtn")
@@ -66,3 +54,16 @@ script.value
 );
 
 loadHistory();
+
+document
+.getElementById("speakBtn")
+.addEventListener(
+"click",
+()=>{
+
+alert("Play ditekan");
+
+speakText(script.value);
+
+}
+);
